@@ -1,10 +1,10 @@
 {
   "devToolsPort": 19002,
   "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 7065,
-  "expoServerNgrokUrl": "https://v3-y4b.anonymous.react-native-stopwatch.exp.direct",
-  "packagerNgrokUrl": "https://packager.v3-y4b.anonymous.react-native-stopwatch.exp.direct",
-  "ngrokPid": 7146,
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null,
   "webpackServerPort": null
 }

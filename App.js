@@ -28,12 +28,24 @@ function RoundButton ({title, color, background}){
     </View>
   )
 }
+
+
+
+function ButtonsRow ({childern}){
+return (
+  <View style={styles.buttonsRow}>{childern}</View>
+)
+}
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
       <Timer interval={DATA.timer}/>
-      <RoundButton title='Start' color='#50D167' background='#1B361F'/>
+      <ButtonsRow>
+        <RoundButton title='Reset' color='#FFFFFF' background='#3D3D3D'/>
+        <RoundButton title='Start' color='#50D167' background='#1B361F'/>
+      </ButtonsRow>
+      
       </View>
     );
   }
@@ -66,7 +78,14 @@ const styles = StyleSheet.create({
     height: 76,
     borderRadius: 38,
     borderWidth: 2,
-    justifyContent: 'center',
-    alignItems: 'center'
-  }
+   justifyContent: 'center',
+    alignItems: 'center',
+  },
+
+   buttonsRow:{
+   flexDirection: 'row',
+   alignSelf: 'Stretch',
+   justifyContent: 'space-between',
+   marginTop: 80,
+ },
 });
